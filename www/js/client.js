@@ -321,51 +321,51 @@ function setButtonsTitle() {
     placement: "top",
   });
   tippy(audioBtn, {
-    content: "Click to audio OFF",
+    content: "Turn Off microphone",
     placement: "top",
   });
   tippy(videoBtn, {
-    content: "Click to video OFF",
+    content: "Turn off camera",
     placement: "top",
   });
   tippy(screenShareBtn, {
-    content: "START screen sharing",
+    content: "Start screen sharing",
     placement: "top",
   });
   tippy(recordStreamBtn, {
-    content: "START recording",
+    content: "Start recording",
     placement: "top",
   });
   tippy(fullScreenBtn, {
-    content: "VIEW full screen",
+    content: "View full screen",
     placement: "top",
   });
   tippy(chatRoomBtn, {
-    content: "OPEN the chat",
+    content: "Open chat",
     placement: "top",
   });
   tippy(myHandBtn, {
-    content: "RAISE your hand",
+    content: "Raise hand",
     placement: "top",
   });
   tippy(whiteboardBtn, {
-    content: "OPEN the whiteboard",
+    content: "Open whiteboard",
     placement: "top",
   });
   tippy(fileShareBtn, {
-    content: "SHARE the file",
+    content: "Share file",
     placement: "top",
   });
   tippy(mySettingsBtn, {
-    content: "Show settings",
+    content: "Settings",
     placement: "top",
   });
   tippy(aboutBtn, {
-    content: "Show about",
+    content: "About",
     placement: "top",
   });
   tippy(leaveRoomBtn, {
-    content: "Leave this room",
+    content: "Leave room",
     placement: "top",
   });
 
@@ -383,7 +383,7 @@ function setButtonsTitle() {
     content: "Save messages",
   });
   tippy(msgerClose, {
-    content: "Close the chat",
+    content: "Close chat",
   });
   tippy(msgerEmojiBtn, {
     content: "Emoji",
@@ -402,48 +402,48 @@ function setButtonsTitle() {
     content: "Close settings",
   });
   tippy(myPeerNameSetBtn, {
-    content: "Change name",
+    content: "Change Name",
   });
 
   // whiteboard btns
   tippy(whiteboardCloseBtn, {
-    content: "CLOSE the whiteboard",
+    content: "Close whiteboard",
     placement: "bottom",
   });
   tippy(whiteboardFsBtn, {
-    content: "VIEW full screen",
+    content: "View full screen",
     placement: "bottom",
   });
   tippy(whiteboardColorPicker, {
-    content: "COLOR picker",
+    content: "Color picker",
     placement: "bottom",
   });
   tippy(whiteboardSaveBtn, {
-    content: "SAVE the board",
+    content: "Save board",
     placement: "bottom",
   });
   tippy(whiteboardEraserBtn, {
-    content: "ERASE the board",
+    content: "Erase board",
     placement: "bottom",
   });
   tippy(whiteboardCleanBtn, {
-    content: "CLEAN the board",
+    content: "Clean board",
     placement: "bottom",
   });
 
   // room actions btn
   tippy(muteEveryoneBtn, {
-    content: "MUTE everyone except yourself",
+    content: "Mute everyone",
     placement: "top",
   });
   tippy(hideEveryoneBtn, {
-    content: "HIDE everyone except yourself",
+    content: "Hide everyone",
     placement: "top",
   });
 
   // Suspend File transfer btn
   tippy(sendAbortBtn, {
-    content: "ABORT file transfer",
+    content: "Abort file transfer",
     placement: "top",
   });
 }
