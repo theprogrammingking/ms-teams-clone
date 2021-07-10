@@ -981,7 +981,7 @@ function setTheme(theme) {
       document.documentElement.style.setProperty("--right-msg-bg", "#0a0b0c");
       document.documentElement.style.setProperty("--wb-bg", "#000000");
       document.documentElement.style.setProperty("--wb-hbg", "#000000");
-      document.documentElement.style.setProperty("--btn-bg", "rgba(255, 255, 255, 0.192)");
+      document.documentElement.style.setProperty("--btn-bg", "transparent");
       document.documentElement.style.setProperty("--btn-color", "white");
       document.documentElement.style.setProperty("--btn-opc", "1");
       document.documentElement.style.setProperty("--btns-left", "20px");
