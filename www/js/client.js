@@ -498,13 +498,12 @@ function getServerUrl() {
  */
 function getRoomId() {
   // skip /join/
-  let roomId = location.pathname.substring(6);
+  let roomId = location.pathname;
+  return roomId;
   // if not specified room id, create one random
-  if (roomId == "") {
-    roomId = makeId(12);
-    const newurl = signalingServer + "/join/" + roomId;
-    window.history.pushState({ url: newurl }, roomId, newurl);
-  }
+  let extend = makeId(12);
+  const newurl = signalingServer + roomId + extend;
+  window.history.pushState({ url: newurl }, roomId, newurl);
   return roomId;
 }
 
@@ -514,7 +513,7 @@ function getRoomId() {
  * @returns random id
  */
 function makeId(length) {
-  let result = "";
+  let result = "$id=";
   let characters =
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
   let charactersLength = characters.length;
@@ -588,7 +587,7 @@ function whoAreYou() {
     allowOutsideClick: false,
     background: swalBackground,
     position: "center",
-    imageUrl: welcomeImg,
+    imageUrl: "../images/microsoft-teams-1.svg",
     title: "Enter your name",
     input: "text",
     html: `<br>
@@ -659,6 +658,8 @@ function welcomeUser() {
     background: swalBackground,
     position: "center",
     title: "<strong>Welcome " + myPeerName + "</strong>",
+    imageAlt: "Teams",
+    imageUrl: "../images/microsoft-teams-1.svg",
     html:
       `
       <br/> 
@@ -3956,8 +3957,18 @@ function getAbout() {
   Swal.fire({
     background: swalBackground,
     position: "center",
-    title: "<strong>Microsoft Engage Program</strong>",
+    title: "<strong>Microsoft Teams Clone</strong>",
     imageAlt: "about",
+    imageUrl: "../images/microsoft-teams-1.svg",
+    html: `
+    <br/>
+    <div id="about">
+      <b>built for MS Engage '21</b> project on
+      <a href="https://github.com/goyalpratik807/ms-teams-clone" target="_blank"><br/></br>
+      <img alt="mirotalk github" src="../images/github.png"></a><br/><br/>
+    </div></br>
+    <div id="author">By:<a href="https://www.linkedin.com/in/pratik-goel-7479231a4/" target="_blank"> Pratik Goel</a></div>
+    `,
     
     showClass: {
       popup: "animate__animated animate__fadeInDown",
