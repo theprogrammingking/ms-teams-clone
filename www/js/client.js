@@ -2061,7 +2061,7 @@ async function shareRoomUrl() {
   Swal.fire({
     background: swalBackground,
     position: "center",
-    title: "Share the Room",
+    title: "Share Room",
     html:
       `
     <br/>
@@ -3687,11 +3687,11 @@ function selectFileToShare() {
     imageAlt: "file-sharing",
     imageUrl: fileSharingImg,
     position: "center",
-    title: "Share the file",
+    title: "Share file",
     input: "file",
     inputAttributes: {
       accept: fileSharingInput,
-      "aria-label": "Select the file",
+      "aria-label": "Select file",
     },
     showDenyButton: true,
     confirmButtonText: `Send`,
@@ -3963,10 +3963,10 @@ function getAbout() {
     html: `
     <br/>
     <div id="about">
-      <b>built for MS Engage '21</b> project on
+      <b>Built for MS Engage '21</b> </br> Project on
       <a href="https://github.com/goyalpratik807/ms-teams-clone" target="_blank"><br/></br>
       <img alt="mirotalk github" src="../images/github.png"></a><br/><br/>
-    </div></br>
+    </div>
     <div id="author">By:<a href="https://www.linkedin.com/in/pratik-goel-7479231a4/" target="_blank"> Pratik Goel</a></div>
     `,
     

@@ -2364,7 +2364,7 @@ textarea.form-input {
 @media (min-width: 641px) {
     .section-inner {
         padding-top: 80px;
-        padding-bottom: 80px;
+        /* padding-bottom: 80px; */
     }
 
     .section-header {
