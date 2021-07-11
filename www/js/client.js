@@ -2138,7 +2138,7 @@ function handleAudio(e, init) {
     audioBtn.className = "fas fa-microphone" + (myAudioStatus ? "" : "-slash");
     if (!isMobileDevice) {
       tippy(initAudioBtn, {
-        content: myAudioStatus ? "Click to audio OFF" : "Click to audio ON",
+        content: myAudioStatus ? "Turn off microphone" : "Turn on microphone",
         placement: "top",
       });
     }
@@ -2161,7 +2161,7 @@ function handleVideo(e, init) {
     videoBtn.className = "fas fa-video" + (myVideoStatus ? "" : "-slash");
     if (!isMobileDevice) {
       tippy(initVideoBtn, {
-        content: myVideoStatus ? "Click to video OFF" : "Click to video ON",
+        content: myVideoStatus ? "Turn off camera" : "Turn on camera",
         placement: "top",
       });
     }
@@ -2192,7 +2192,7 @@ function swapCamera() {
     })
     .catch((err) => {
       console.log("[Error] to swaping camera", err);
-      userLog("error", "Error to swaping the camera " + err);
+      userLog("error", "Unable to swap the camera " + err);
       // https://blog.addpipe.com/common-getusermedia-errors/
     });
 }
@@ -2284,7 +2284,7 @@ function setMyVideoStatusTrue() {
     // only for desktop
     if (!isMobileDevice) {
       tippy(videoBtn, {
-        content: "Click to video OFF",
+        content: "Turn off camera",
         placement: "top",
       });
     }
@@ -2379,7 +2379,7 @@ function refreshMyLocalStream(stream, localAudioTrackChange = false) {
   };
 
   /** when you stop the screen sharing, on default i turn back to the webcam with video stream ON.
-   *  if you want the webcam with video stream OFF, just disable it with the button (click to video OFF),
+   *  if you want the webcam with video stream OFF, just disable it with the button (Turn off camera),
    *  before to stop the screen sharing.
    */
   if (myVideoStatus === false) {
@@ -2442,7 +2442,7 @@ function startStreamRecording() {
     // only for desktop
     if (!isMobileDevice) {
       tippy(recordStreamBtn, {
-        content: "START recording",
+        content: "Start recording",
         placement: "top",
       });
     }
@@ -2458,7 +2458,7 @@ function startStreamRecording() {
   // only for desktop
   if (!isMobileDevice) {
     tippy(recordStreamBtn, {
-      content: "STOP recording",
+      content: "Stop recording",
       placement: "top",
     });
   }
@@ -2508,7 +2508,7 @@ function downloadRecordedStream() {
         Recording Info <br/>
         FILE: ${recFileName} <br/>
         SIZE: ${blobFileSize} <br/>
-        Please wait to be processed, then will be downloaded to your ${currentDevice} device.
+        Please wait for the file to be processed, it will be downloaded to your ${currentDevice} device.
       </div>`
     );
 
@@ -2581,7 +2581,7 @@ function showChatRoomDraggable() {
   // only for desktop
   if (!isMobileDevice) {
     tippy(chatRoomBtn, {
-      content: "CLOSE the chat",
+      content: "Close chat",
       placement: "top",
     });
   }
@@ -2632,7 +2632,7 @@ function hideChatRoomAndEmojiPicker() {
   // only for desktop
   if (!isMobileDevice) {
     tippy(chatRoomBtn, {
-      content: "OPEN the chat",
+      content: "Open chat",
       placement: "top",
     });
   }
@@ -3715,7 +3715,7 @@ function selectFileToShare() {
         if (!fsDataChannelOpen) {
           userLog(
             "error",
-            "Unable to Sharing the file, DataChannel seems closed."
+            "Unable to Share the file, DataChannel seems closed."
           );
           return;
         }
