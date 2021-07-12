@@ -505,8 +505,6 @@ function getRoomId() {
     const newurl = signalingServer + "/join/" + roomId;
     window.history.pushState({ url: newurl }, roomId, newurl);
   }
-  const newurl = signalingServer + roomId;
-  window.history.pushState({ url: newurl }, roomId, newurl);
   return roomId;
 }
 
@@ -516,7 +514,7 @@ function getRoomId() {
  * @returns random id
  */
 function makeId(length) {
-  let result = "$id=";
+  let result = "";
   let characters =
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
   let charactersLength = characters.length;
