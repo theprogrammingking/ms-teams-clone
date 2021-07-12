@@ -498,11 +498,14 @@ function getServerUrl() {
  */
 function getRoomId() {
   // skip /join/
-  let roomId = location.pathname;
-  return roomId;
+  let roomId = location.pathname.substring(6);
   // if not specified room id, create one random
-  let extend = makeId(12);
-  const newurl = signalingServer + roomId + extend;
+  if (roomId == "") {
+    roomId = makeId(12);
+    const newurl = signalingServer + "/join/" + roomId;
+    window.history.pushState({ url: newurl }, roomId, newurl);
+  }
+  const newurl = signalingServer + roomId;
   window.history.pushState({ url: newurl }, roomId, newurl);
   return roomId;
 }
