@@ -626,11 +626,11 @@ function whoAreYou() {
   initVideoBtn = getId("initVideoBtn");
   // popup text
   tippy(initAudioBtn, {
-    content: "Click to audio OFF",
+    content: "Turn off microphone",
     placement: "top",
   });
   tippy(initVideoBtn, {
-    content: "Click to video OFF",
+    content: "Turn off camera",
     placement: "top",
   });
 }
@@ -3046,7 +3046,7 @@ function setMyAudioStatus(status) {
   // only for desktop
   if (!isMobileDevice) {
     tippy(audioBtn, {
-      content: status ? "Click to audio OFF" : "Click to audio ON",
+      content: status ? "Turn off microphone" : "Turn on microphone",
       placement: "top",
     });
   }
@@ -3069,7 +3069,7 @@ function setMyVideoStatus(status) {
   // only for desktop
   if (!isMobileDevice) {
     tippy(videoBtn, {
-      content: status ? "Click to video OFF" : "Click to video ON",
+      content: status ? "Turn off camera" : "Turn on camera",
       placement: "top",
     });
   }
@@ -3134,7 +3134,7 @@ function setPeerVideoStatus(peer_id, status) {
   peerVideoStatus.className = "fas fa-video" + (status ? "" : "-slash");
   peerVideoAvatarImage.style.display = status ? "none" : "block";
   tippy(peerVideoStatus, {
-    content: status ? "Participant video is ON" : "Participant video is OFF",
+    content: status ? "Participant's video is ON" : "Participant's video is OFF",
   });
 }
 
@@ -3207,8 +3207,8 @@ function disableAllPeers(element) {
     position: "center",
     title:
       element == "audio"
-        ? "Mute everyone except yourself?"
-        : "Hide everyone except yourself?",
+        ? "Mute everyone"
+        : "Hide everyone",
     text:
       element == "audio"
         ? "Once muted, you won't be able to unmute them, but they can unmute themselves at any time."
@@ -3288,7 +3288,7 @@ function whiteboardOpen() {
     drawsize = 3;
     fitToContainer(canvas);
     tippy(whiteboardBtn, {
-      content: "CLOSE the whiteboard",
+      content: "Close whiteboard",
       placement: "top",
     });
     playSound("newMessage");
@@ -3303,7 +3303,7 @@ function whiteboardClose() {
     whiteboardCont.style.display = "none";
     isWhiteboardVisible = false;
     tippy(whiteboardBtn, {
-      content: "OPEN the whiteboard",
+      content: "Open whiteboard",
       placement: "top",
     });
   }
