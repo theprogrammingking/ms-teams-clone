@@ -40,7 +40,7 @@ Open the app in one of following **supported browser**
 -   `Open` https://ms-teams-clone-demo.herokuapp.com/newcall
 -   `Pick` your personal Room name and `Join To Room`
 -   `Allow` to use the camera and microphone
--   `Share` the Room URL and `Wait` someone to join for video conference
+-   `Share` the Room URL and `Wait` for other participants to join for video conference
 
 ## Quick start
 
