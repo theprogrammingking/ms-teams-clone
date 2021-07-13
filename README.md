@@ -19,9 +19,9 @@ Open the app in one of following **supported browser**
 <br>
 
 ## Features
--   
 -   Entirely browser based
 -   No call time limitation
+-   Direct peer-to-peer connections between all participants in the meeting
 -   Desktop and Mobile compatible
 -   Optimized Room Url Sharing (share it to your participants, wait them to join)
 -   WebCam Streaming (Front - Rear for mobile)
