@@ -3966,7 +3966,7 @@ function getAbout() {
     <div id="about">
       <b>Built for MS Engage '21</b> </br> Project on
       <a href="https://github.com/goyalpratik807/ms-teams-clone" target="_blank"><br/></br>
-      <img alt="mirotalk github" src="../images/github.png"></a><br/><br/>
+      <img alt="github" src="../images/github.png"></a><br/><br/>
     </div>
     <div id="author">By:<a href="https://www.linkedin.com/in/pratik-goel-7479231a4/" target="_blank"> Pratik Goel</a></div>
     `,
