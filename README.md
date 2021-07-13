@@ -19,9 +19,9 @@ Open the app in one of following **supported browser**
 <br>
 
 ## Features
-
+-   
 -   Entirely browser based
--   Unlimited number of conference rooms without call time limitation
+-   No call time limitation
 -   Desktop and Mobile compatible
 -   Optimized Room Url Sharing (share it to your participants, wait them to join)
 -   WebCam Streaming (Front - Rear for mobile)
@@ -32,7 +32,7 @@ Open the app in one of following **supported browser**
 -   Recording your Screen, Audio and Video
 -   Chat with Emoji Picker & Private messages & Save the conversations
 -   Simple collaborative whiteboard
--   Right click on the Video elements for more options
+-   Right click on the Video elements for picture-in-picture
 -   Direct `peer-to-peer` connection ensures lowest latency thanks to `webrtc`
 
 ## Demo
@@ -66,8 +66,10 @@ npm start
 
 Many Thanks to:
 
--   Miroslav Pejic (various features from Mirotalk)
+-   Miroslav Pejic (Implemantation of various features)
 -   ianramzy (html template)
 -   vasanthv (webrtc)
 -   Sajad (chat)
 -   i-aryan (whiteboard)
+
+    For such amazing open source projects that helped me add many brillient features to this application
