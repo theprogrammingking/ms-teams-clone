@@ -72,4 +72,4 @@ Many Thanks to:
 -   Sajad (chat)
 -   i-aryan (whiteboard)
 
-    For such amazing open source projects that helped me add many brillient features to this application
+    For such amazing open source projects that helped me add many brilliant features to this application
