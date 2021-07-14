@@ -1,5 +1,5 @@
 {
-  "name": "mirotalk",
+  "name": "ms-teams-clone",
   "version": "1.0.0",
   "description": "A free WebRTC browser-based video call",
   "main": "server.js",
@@ -9,11 +9,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/miroslavpejic85/mirotalk"
+    "url": "git+https://github.com/goyalpratik807/ms-teams-clone"
   },
-  "author": "Miroslav Pejic",
+  "author": "Pratik Goel",
   "license": "AGPL-3.0",
-  "homepage": "https://github.com/miroslavpejic85/mirotalk",
+  "homepage": "https://github.com/goyalpratik807/ms-teams-clone",
   "dependencies": {
     "compression": "^1.7.4",
     "dotenv": "^10.0.0",
